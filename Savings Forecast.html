@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link type="style/css" rel="stylesheet" href="style.css">
+<script type="text/javascript" src="forecast.js"></script>
+<html>
+  <head>
+    <title>Savings Forecast</title>
+  </head>
+
+  <h1>Personal Savings Forecast</h2>
+
+<div class="parameters">
+  <form>
+      Current Account Value ($):      <input type="number" name="value" size="10" value="50416.00" id="value"><br>
+      Savings per Paycheck ($):       <input type="number" name="savings" size="7" value="1500.00" id="savings"><br>
+      Assumed Increase in Pay (%):    <input type="number" name="raise" size="3" value="3.0" id="raise"><br>
+      End Date of Forecast:  <input type="date" name="enddate" size="10" value="2018-01-01" id="enddate">
+  </form>
+</div>
+
+<br>
+  <h3>Final Account Value ($): </h3>
+  <h3 id="final">$ 0,000.00</h3>
+<br>
+  <div class="button">
+    <button id="click" onClick=forecast()>Calculate</button>
+  </div>
+
+
+
+
+</html>
